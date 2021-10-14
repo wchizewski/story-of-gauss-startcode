@@ -12,21 +12,21 @@ nIn.addEventListener("input", input)
 
 
 // Event function
-function input(){
+function input() {
     // get n value
     let nValue = +nIn.value;
     // check n value
     // min
-    if (nValue < 0){
+    if (nValue < 0) {
         nValue = 0
         nIn.value = 1
-    // max
-    } else if (nValue > 10000){
+        // max
+    } else if (nValue > 10000) {
         nValue = 10000;
         nIn.value = 10000;
     }
 }
-    
+
 function calcSum() {
     // get n value
     let nValue = +nIn.value;
@@ -39,7 +39,7 @@ function calcSum() {
     //     total = total + n;
     // }
 
-    let total = nValue * ( nValue + 1 ) / 2
+    let total = nValue * (nValue + 1) / 2
 
     // Output the Total
     sumOut.innerHTML = total
