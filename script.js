@@ -1,9 +1,9 @@
 // Story of Gauss by Will
 
 // HTML Elements
-let calcBtn = document.getElementById("calc-btn");
-let sumOut = document.getElementById("sum-out");
-let nIn = document.getElementById("n-in");
+calcBtn = document.getElementById("calc-btn");
+sumOut = document.getElementById("sum-out");
+nIn = document.getElementById("n-in");
 nOut = document.getElementById("n-out");
 
 // add event listener
@@ -18,11 +18,9 @@ function input() {
     // check n value
     // min
     if (nValue < 0) {
-        nValue = 0
         nIn.value = 1
         // max
     } else if (nValue > 10000) {
-        nValue = 10000;
         nIn.value = 10000;
     }
 }
